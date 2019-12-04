@@ -14,6 +14,7 @@ alias tree="Tree -CFA --dirsfirst"
 alias mine="sudo chown -R $(whoami)"
 
 # Python
+# Create a new Python project and launch Sublime Text 3
 pynew() {
     poetry new --src $1
     cd $1
@@ -24,12 +25,23 @@ pynew() {
     git commit -m "Initial commit"
     cat <<EOS > "$1.sublime-project"
 {
-"folders": [
+    "folders": [
         {
-            "path": ".",
-            "folder_exclude_patterns": [".venv"]
+            "folder_exclude_patterns": [".venv"],
+            "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "anaconda_linting": true,
+        "anaconda_linting_behaviour": "always",
+        "python_interpreter": "$(pwd).venv/bin/python",
+        "sublack.black_blackd_autostart": true,
+        "sublack.black_on_save": true,
+        "sublack.black_use_blackd": true,
+        "test_command": "pytest",
+        "test_virtualenv": "$(pwd).venv",
+        "validate_imports": true
+    }
 }
 EOS
     subl --project "$1.sublime-project"

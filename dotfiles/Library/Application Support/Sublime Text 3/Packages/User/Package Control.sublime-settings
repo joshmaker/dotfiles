@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"EditorConfig",
+		"FileManager",
+		"MarkdownLivePreview",
+		"Materialize",
+		"Package Control",
+		"requirementstxt",
+		"sublack",
+		"ZSH"
+	]
+}
