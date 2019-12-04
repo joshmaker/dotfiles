@@ -1,0 +1,8 @@
+
+# Ignore .ssh files
+dotfiles/.ssh/id_rsa
+dotfiles/.ssh/id_rsa.pub
+dotfiles/.ssh/known_hosts
+
+# Ignore computer specific git configuration
+dotfiles/.gitconf/local

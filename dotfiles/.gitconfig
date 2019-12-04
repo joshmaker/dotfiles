@@ -1,0 +1,35 @@
+[alias]
+    aliases = config --get-regexp alias
+    history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    new   = checkout -b
+    stat  = status -sb
+[color]
+    ui = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
+[core]
+    excludesfile = ~/.gitconf/ignore
+    editor = subl
+[commit]
+    gpgsign = true
+[merge]
+    tool = opendiff
+[pull]
+    rebase = true
+[rebase]
+    autostash = true
+[submodule]
+    recurse = true
+[user]
+    email = 18324+joshmaker@users.noreply.github.com
+    name = Josh West
+
+# Include unversioned local settings, such as the signing key for this computer
+[include]
+    path = ~/.gitconf/local
