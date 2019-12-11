@@ -6,11 +6,14 @@
 	"installed_packages":
 	[
 		"Anaconda",
+		"Cython+",
 		"EditorConfig",
 		"FileManager",
+		"MagicPython",
 		"MarkdownLivePreview",
 		"Materialize",
 		"Package Control",
+		"Python Improved",
 		"requirementstxt",
 		"sublack",
 		"ZSH"

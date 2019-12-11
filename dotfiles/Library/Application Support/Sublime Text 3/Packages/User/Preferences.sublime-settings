@@ -62,7 +62,7 @@
 	"spell_check": true,
 	"tern_argument_hints": true,
 	"tern_inhibit_word_completions": true,
-	"theme": "Material Spacegray Eighties.sublime-theme",
+	"theme": "Material Spaceblack.sublime-theme",
 	"theme_font_options":
 	[
 		"subpixel_antialias"
