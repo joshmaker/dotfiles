@@ -15,7 +15,7 @@
     untracked = red
 [core]
     excludesfile = ~/.gitconf/ignore
-    editor = subl
+    editor = subl -n -w
 [commit]
     gpgsign = true
 [merge]

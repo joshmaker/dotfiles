@@ -14,6 +14,11 @@ alias tree="Tree -CFA --dirsfirst"
 alias mine="sudo chown -R $(whoami)"
 
 # Python
+# clear cached Python files 
+pyclean() {
+    find ./$1 -type d -name "__pycache__" -or -type f -name "*.pyc" -delete
+}
+
 # Create a new Python project and launch Sublime Text 3
 pynew() {
     poetry new --src $1
@@ -34,12 +39,12 @@ pynew() {
     "settings": {
         "anaconda_linting": true,
         "anaconda_linting_behaviour": "always",
-        "python_interpreter": "$(pwd).venv/bin/python",
+        "python_interpreter": "$PWD/.venv/bin/python",
         "sublack.black_blackd_autostart": true,
         "sublack.black_on_save": true,
         "sublack.black_use_blackd": true,
         "test_command": "pytest",
-        "test_virtualenv": "$(pwd).venv",
+        "test_virtualenv": "$PWD/.venv",
         "validate_imports": true
     }
 }
