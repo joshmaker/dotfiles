@@ -7,6 +7,7 @@ binaries=(
   htop
   pyenv
   tldr
+  trash
   tree
 )
 brew install ${binaries[@]}
