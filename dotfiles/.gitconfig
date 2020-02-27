@@ -1,8 +1,12 @@
 [alias]
     aliases = config --get-regexp alias
-    history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    new   = checkout -b
-    stat  = status -sb
+    history = log --no-merges --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    changes = history origin/master..
+    new     = checkout -b
+    stat    = status -sb
+    merged  = !git branch --merged | grep -v "^*" | grep -v "master" | grep -v "dev"
+    trim    = !git merged | xargs git branch -d
+    sync    = !git fetch origin master && git rebase -i origin/master
 [color]
     ui = auto
     branch = auto
@@ -16,8 +20,7 @@
 [core]
     excludesfile = ~/.gitconf/ignore
     editor = subl -n -w
-[commit]
-    gpgsign = true
+
 [merge]
     tool = opendiff
 [pull]
@@ -27,8 +30,8 @@
 [submodule]
     recurse = true
 [user]
-    email = 18324+joshmaker@users.noreply.github.com
-    name = Josh West
+	email = 18324+joshmaker@users.noreply.github.com
+	name = Josh West
 
 # Include unversioned local settings, such as the signing key for this computer
 [include]
