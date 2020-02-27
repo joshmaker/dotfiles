@@ -23,6 +23,3 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m'
 
 # GPG
 export GPG_TTY=$(tty)
-
-# Prompt
-export PROMPT='%(?.%F{green}√.%F{red}X)%f %B%F{240}%d%f%b ~> '
