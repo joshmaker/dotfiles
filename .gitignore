@@ -8,4 +8,4 @@ dotfiles/.ssh/known_hosts
 dotfiles/.gitconf/local
 
 # Ignore non-user Sublime Text files
-/dotfiles/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+/dotfiles/Library/Application\ Support/Sublime\ Text\ 3/

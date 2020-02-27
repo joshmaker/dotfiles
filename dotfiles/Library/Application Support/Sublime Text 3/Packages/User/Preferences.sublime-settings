@@ -15,7 +15,7 @@
 		}
 	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Materialize/schemes/Material Spacegray Eighties.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -29,6 +29,7 @@
 		"*.egg-info",
 		"node_modules",
 		".pytest_cache",
+		".mypy_cache",
 		".svn",
 		".tox",
 		".git",
@@ -41,11 +42,13 @@
 		"subpixel_antialias",
 		"gray_antialias"
 	],
-	"font_size": 16,
+	"font_size": 22,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Six",
+		"Vintage",
+		"Vintageous"
 	],
 	"indent_guide_options":
 	[
@@ -54,6 +57,7 @@
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
+	"neovintageous_build_version": 11100,
 	"rulers":
 	[
 		80,
@@ -66,5 +70,8 @@
 	"theme_font_options":
 	[
 		"subpixel_antialias"
-	]
+	],
+	"vintageous_enable_surround": true,
+	"vintageous_use_ctrl_keys": true,
+	"vintageous_use_super_keys": null
 }

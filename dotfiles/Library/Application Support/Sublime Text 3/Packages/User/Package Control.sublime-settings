@@ -7,14 +7,20 @@
 	[
 		"Anaconda",
 		"Cython+",
+		"DotENV",
 		"EditorConfig",
-		"FileManager",
+		"GitlabIntegrate",
+		"isort",
+		"JSON Reindent",
 		"MagicPython",
 		"MarkdownLivePreview",
 		"Materialize",
+		"NeoVintageous",
 		"Package Control",
+		"PackageResourceViewer",
 		"Python Improved",
 		"requirementstxt",
+		"SideBarEnhancements",
 		"sublack",
 		"ZSH"
 	]
